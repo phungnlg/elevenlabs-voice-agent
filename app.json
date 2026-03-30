@@ -1,0 +1,36 @@
+{
+  "expo": {
+    "name": "ElevenLabs Voice Agent",
+    "slug": "elevenlabs-voice-agent",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": false,
+    "scheme": "elevenlabs-voice-agent",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0F1A"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app needs access to your microphone for voice conversations with the AI agent.",
+        "UIBackgroundModes": ["audio"]
+      },
+      "bundleIdentifier": "com.phungnlg.elevenlabs-voice-agent"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F0F1A"
+      },
+      "permissions": ["RECORD_AUDIO"],
+      "package": "com.phungnlg.elevenlabsvoiceagent"
+    },
+    "plugins": [
+      "expo-router"
+    ]
+  }
+}
